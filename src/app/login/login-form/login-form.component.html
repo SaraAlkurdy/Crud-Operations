@@ -1,0 +1,51 @@
+<div class="login">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 offset-md-3">
+                    <div class="login-form">
+                        <img src="../../../../assets/images/pyramid.svg">
+                        <h3>log in</h3>
+                        <form #f="ngForm">
+                            <div class="name mb-4">
+                              <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span><i class="fa fa-user"></i></span>
+                                </div>
+                                <input id="username" ngModel #username="ngModel" type="text" required class="form-control" name="username" placeholder="User Name" minlength="3">
+                              </div>
+
+                              <div *ngIf="submitted && !(username.valid)" class="error-msg">Please enter valid name.</div>
+                            </div>
+
+                              <div class="password  mb-4">
+                                <div class="input-group form-group">
+                                  <div class="input-group-prepend">
+                                      <span><i class="fa fa-lock"></i></span>
+                                  </div>
+                                  <input id="password" ngModel #password="ngModel" type="password" required class="form-control" name="password" placeholder="Password" minlength="3">
+  
+                                </div>
+                                <div *ngIf="submitted && !(password.valid)" class="error-msg">Please enter valid password.</div>
+                              </div>
+
+
+                               <div class="form-check mb-5">
+                                <input class="form-check-input" #remember name="remember" ngModel type="checkbox" id="autoSizingCheck">
+                                <label class="form-check-label" for="autoSizingCheck">
+                                  Remember me
+                                </label>
+                              </div>
+
+                              <button type="submit" class="btn mb-5" (click)="login(f)">login</button>
+
+                              <div class="forgot">
+                                <a>forgot password ?</a>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

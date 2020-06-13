@@ -1,0 +1,34 @@
+.user-view {
+    margin: 100px 0;
+    .user-img {
+        text-align: center;
+        img {
+            border-radius: 15px;
+            width: 100%;
+        }
+    }
+
+    .user-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+
+        h2 {
+            line-height: 2.5;
+            font-size: 3rem;
+            background: -webkit-linear-gradient(#7b1fa2, #f06292);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            background: -webkit-linear-gradient(#7b1fa2, #f06292);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

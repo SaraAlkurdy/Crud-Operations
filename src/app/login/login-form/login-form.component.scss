@@ -1,0 +1,127 @@
+.login {
+    background-image: url("../../../assets/images/bg.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .overlay {
+        background: rgba(255, 255, 255, 0.9);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-form {
+        background-image: linear-gradient(#826bfc, #a936f2);
+        margin: 40px 0;
+        border-radius: 10px;
+        padding: 40px 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 30%;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            padding: 5px 30px;
+        }
+
+        h3 {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 15px 0;
+            letter-spacing: 1px;
+        }
+
+        form {
+            width: 100%;
+            .form-group {
+                border-bottom: 2px solid #ad80fa;
+                line-height: 2.5;
+                span {
+                    i {
+                        color: #fff;
+                    }
+                }
+
+                .form-control {
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+
+                    &:focus {
+                        border-color: #666666;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        background-color: transparent;
+                    }
+                }
+
+                
+
+                ::-webkit-input-placeholder {
+                    /* WebKit, Blink, Edge */
+                    color: #fff;
+                }
+                :-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    color: #fff;
+                    opacity: 1;
+                }
+                ::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    color: #fff;
+                    opacity: 1;
+                }
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #fff;
+                }
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: #fff;
+                }
+
+                ::placeholder {
+                    /* Most modern browsers support this now. */
+                    color: #fff;
+                }
+            }
+
+            .form-check {
+                label {
+                    color: #fff;
+                }
+            }
+
+            .error-msg {
+                color: #ffcdd2;
+            }
+
+            button {
+                background: #fff;
+                text-transform: capitalize;
+                color: #333;
+                margin: 0 auto;
+                display: block;
+                border-radius: 25px;
+                padding: 10px 35px;
+                font-weight: 600;
+            }
+
+            a {
+                color: #e5e4e5;
+                text-transform: capitalize;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+}

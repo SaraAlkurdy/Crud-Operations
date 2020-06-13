@@ -1,0 +1,47 @@
+.users {
+    .create {
+        background-image: linear-gradient(#826bfc, #a936f2);
+        color: #fff;
+        text-transform: capitalize;
+    }
+
+    .table-responsive {
+        display: block !important;
+        overflow-x: auto !important;
+        width: 100% !important;
+
+        table {
+            text-align: center;
+            margin: 50px 0;
+            thead {
+                text-transform: capitalize;
+            }
+    
+            tbody {
+                tr {
+                    td {
+                        button {
+                            border-radius: 50%;
+                            i {
+                                font-size: 25px;
+                                cursor: pointer;
+    
+                                &[class="fa fa-trash"] {
+                                    color: #f44336;
+                                }
+                                &[class="fa fa-edit"] {
+                                    color: #00897b;
+                                }
+                                &[class="fa fa-eye"] {
+                                    color: #ffc107;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   
+}

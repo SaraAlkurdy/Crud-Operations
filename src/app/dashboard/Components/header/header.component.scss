@@ -1,0 +1,27 @@
+header {
+    background: #493386;
+
+    a {
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    button {
+        i {
+            color: #fff;
+        }
+    }
+
+    .navbar-collapse {
+        form {
+            button {
+                background: #fff;
+                color: #000;
+                font-weight: 600;
+            }
+        }
+    }
+}

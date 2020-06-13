@@ -1,0 +1,35 @@
+<div class="users">
+  <div class="container">
+    <button class="btn create mt-5" (click)="onCreateUser()"><i class="fas fa-plus mr-2"></i>create user</button>
+
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">image</th>
+            <th scope="col">first name</th>
+            <th scope="col">last name</th>
+            <th scope="col">email</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor=" let user of users">
+
+            <th scope="row">{{user.id}}</th>
+            <td><img [src]="user.avatar"></td>
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+            <td>{{user.email}}</td>
+            <td>
+              <button class="btn" (click)="onViewUser(user.id)"><i class="fa fa-eye"></i></button>
+              <button class="btn" (click)="onUpdateUser(user.id)"><i class="fa fa-edit"></i></button>
+              <button class="btn" (click)="onRemoveUser(user.id)"><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

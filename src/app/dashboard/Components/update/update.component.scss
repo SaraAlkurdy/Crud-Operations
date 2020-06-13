@@ -1,0 +1,97 @@
+.update {
+    margin: 100px 0;
+
+    .update-form {
+        background-image: linear-gradient(#826bfc, #a936f2);
+        border-radius: 10px;
+        padding: 40px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        i[class="fas fa-user-edit"] {
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            padding: 35px;
+            font-size: 100px;
+        }
+
+        h3 {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 15px 0;
+            letter-spacing: 1px;
+        }
+
+        form {
+            width: 100%;
+
+            .form-group {
+                border-bottom: 2px solid #ad80fa;
+                line-height: 2.5;
+                span {
+                    i {
+                        color: #fff;
+                    }
+                }
+
+                .form-control {
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+
+                    &:focus {
+                        border-color: #666666;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        background-color: transparent;
+                    }
+                }
+
+                ::-webkit-input-placeholder {
+                    /* WebKit, Blink, Edge */
+                    color: #fff;
+                }
+                :-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    color: #fff;
+                    opacity: 1;
+                }
+                ::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    color: #fff;
+                    opacity: 1;
+                }
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #fff;
+                }
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: #fff;
+                }
+
+                ::placeholder {
+                    /* Most modern browsers support this now. */
+                    color: #fff;
+                }
+            }
+
+            button {
+                background: #fff;
+                text-transform: capitalize;
+                color: #333;
+                margin: 60px auto 0;
+                display: block;
+                border-radius: 25px;
+                padding: 10px 35px;
+                font-weight: 600;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}

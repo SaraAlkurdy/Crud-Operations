@@ -1,0 +1,66 @@
+<div class="update">
+  <div class="container">
+    <div class="row">
+
+      <div class="update-form col-md-8 col-sm-12 offset-md-2">
+        <!-- <img src="../../../../assets/images/edit.svg"> -->
+        <i class="fas fa-user-edit"></i>
+        <h3>update</h3>
+        <form #update="ngForm">
+
+          <div class="first-name mb-4">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span><i class="fa fa-user"></i></span>
+              </div>
+              <input id="first_name" [(ngModel)]="user.first_name" #first_name="ngModel" type="text" required
+                class="form-control" name="first_name" placeholder="First Name" minlength="3">
+              <div *ngIf="submitted && !(first_name.valid)" class="error-msg">Please enter valid name.</div>
+            </div>
+          </div>
+
+          <div class="last-name mb-4">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span><i class="fa fa-user"></i></span>
+              </div>
+              <input id="last_name" [(ngModel)]="user.last_name" #last_name="ngModel" type="text" required
+                class="form-control" name="last_name" placeholder="Last Name" minlength="3">
+              <div *ngIf="submitted && !(last_name.valid)" class="error-msg">Please enter valid name.</div>
+            </div>
+
+
+          </div>
+
+          <div class="email mb-4">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span><i class="fa fa-envelope"></i></span>
+              </div>
+              <input id="email" [(ngModel)]="user.email" #email="ngModel" type="email" required class="form-control"
+                name="email" placeholder="Email" minlength="3">
+              <div *ngIf="submitted && !(email.valid)" class="error-msg">Please enter valid email.</div>
+            </div>
+          </div>
+
+          <div class="avatar mb-4">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span><i class="fa fa-image"></i></span>
+              </div>
+              <input id="avatar" [(ngModel)]="user.avatar" #avatar="ngModel" type="text" required class="form-control"
+                name="avatar" placeholder="Avatar" minlength="3">
+              <div *ngIf="submitted && !(avatar.valid)" class="error-msg">Please enter valid image.</div>
+            </div>
+          </div>
+
+          <button type="submit btn" class="btn mb-5" (click)="onSubmit(update)">update</button>
+
+        </form>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
